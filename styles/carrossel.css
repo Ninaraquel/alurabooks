@@ -1,0 +1,155 @@
+.carrossel__titulo {
+    color: var(--laranja);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.card {
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+    margin: 1em;
+    padding: 1em;
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    color: var(--laranja);
+}
+
+.descricao__titulo-livro {
+    color: var(--azul);
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0.5em 0;
+}
+
+.descricao__texto {
+    font-size: 14px;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes {
+    display: flex;
+}
+
+.botoes__item {
+    margin: 0 0.3em;
+}
+
+.botao__ancora {
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1em 2.2em;
+}
+
+.botao__ancora:active {
+    background-color: var(--azul);
+}
+.descricao__estrela {
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        font-size: 26px;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 60%;
+        width: 48px;
+        height: 48px;
+        background: var(--azul-degrade);
+        border-radius: 100%;
+        color: var(--branco);
+        font-size: 24px;
+    }
+
+    .swiper-button-next::after, .swiper-button-prev::after {
+        content: ""; /* para tirar as setas do swiper */
+    }
+
+
+    .swiper-wrapper {
+        display: flex;
+        gap: 1em;
+
+    }
+
+    .card {
+        width: 40%;
+        margin: 2em auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .carrossel__container {
+        display: flex;
+        margin: 0 15vw 3em 15vw;
+        align-items: center;
+    }
+
+    .swiper-pagination {
+        margin: 0.8em;
+    }
+
+    .swiper {
+        width: 45%;
+    }
+
+    .card {
+        margin: 2em 0 0 0;
+    }
+
+   
+    .descricao__titulo {
+        font-size: 30px;
+    }
+
+    .descricao__texto {
+        font-size: 16px;
+    }
+}
