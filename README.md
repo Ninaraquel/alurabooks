@@ -23,5 +23,6 @@ e adaptado para telas maiores com medias queries.
 - HTML5
 - CSS3
 - SwiperJS (plugin de carrossel)
-
+---
+[Acesse o projeto no GitHub Pages](https://ninaraquel.github.io/alurabooks/)📱💻
   
